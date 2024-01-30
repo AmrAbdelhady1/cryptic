@@ -51,7 +51,7 @@ const linksType = [
 
 const Footer = () => {
   return (
-    <div className="py-[60px] bg-blackPrimary w-full px-[9vw] text-white text-xs md:text-sm lg:text-base leading-[1.5em]">
+    <div className="py-[60px] bg-blackPrimary w-full px-[9vw] text-white text-xs md:text-sm lg:text-base leading-[1.5em] mt-[7vw]">
       <div className="flex flex-wrap justify-between items-start mb-12 gap-5">
         <div className="flex flex-col">
           <Link href={"/"}>

@@ -19,6 +19,7 @@ const config: Config = {
         blackPrimary: "#282c32",
         darkGray: "#d0d8d7",
         darkRed: "#811f04",
+        darkGray50:"rgba(175, 175, 175, .5)",
       },
       fontFamily: {
 				inter: ['var(--font-inter)'],
