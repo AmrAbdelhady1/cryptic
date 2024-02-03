@@ -5,3 +5,14 @@
 .price-card-shadow:hover{
   box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
 }
+
+.hero-banner-bg {
+  background: url('/assets/images/home/bg.webp') no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.one-app-bg {
+  background: url('/assets/images/home/bg.webp') no-repeat;
+  background-size: cover;
+}
