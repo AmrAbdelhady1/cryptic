@@ -5,6 +5,7 @@ import InOneApp from './InOneApp'
 import Start from './Start'
 import Plans from '@/app/pricing/Plans'
 import LatestNews from './LatestNews'
+import Testimonials from '../Testimonials/Testimonials'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <InOneApp />
       <Start />
       <Plans />
+      <Testimonials />
       <LatestNews />
     </div>
   )

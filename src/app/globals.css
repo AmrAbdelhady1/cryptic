@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.price-card-shadow:hover{
-  box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+.price-card-shadow:hover {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero-banner-bg {
-  background: url('/assets/images/home/bg.webp') no-repeat;
+  background: url("/assets/images/home/bg.webp") no-repeat;
   background-size: contain;
   background-position: right;
 }
 
 .one-app-bg {
-  background: url('/assets/images/home/bg.webp') no-repeat;
+  background: url("/assets/images/home/bg.webp") no-repeat;
   background-size: cover;
+}
+
+@layer utilities {
+  .btn-yellow {
+    @apply font-medium rounded-[5px] w-fit mt-10 text-lg bg-primary border border-primary duration-500 py-[18px] px-[30px] hover:text-white hover:bg-blackPrimary hover:border-blackPrimary;
+  }
 }

@@ -43,7 +43,7 @@ const HowWorks = () => {
             key={item.id}
             whileHover={{ y: -16 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="w-full max-w-[370px] p-5 bg-white border border-darkGray50 rounded-[10px]"
+            className="w-full max-w-[370px] p-5 bg-white border border-darkGray50 rounded-[10px] cursor-pointer"
           >
             <Image
               src={item.image}

@@ -3,6 +3,7 @@ import { Inter, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
+import 'swiper/css';
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dmSans" });

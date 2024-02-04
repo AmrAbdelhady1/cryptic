@@ -1,3 +1,6 @@
+"use client"
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Start = () => {
@@ -17,12 +20,18 @@ const Start = () => {
         </button>
       </div>
 
+    <motion.div
+    animate={{ y: [0,50,0] }}
+    transition={{ duration: 4, ease: "easeInOut", repeat: Infinity }}
+    >
+
       <Image
         src="/assets/images/contactus/ready-bg.webp"
         alt="bg"
         width={375}
         height={500}
       />
+    </motion.div>
     </div>
   );
 };

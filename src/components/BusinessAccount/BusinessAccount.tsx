@@ -28,15 +28,6 @@ const data = [
   },
 ];
 
-const brands = [
-  "/assets/images/contactus/brand-1.png",
-  "/assets/images/contactus/brand-2.png",
-  "/assets/images/contactus/brand-3.png",
-  "/assets/images/contactus/brand-4.png",
-  "/assets/images/contactus/brand-5.png",
-  "/assets/images/contactus/brand-6.png",
-];
-
 const BusinessAccount = () => {
   return (
     <div className="bg-blackPrimary px-[9vw] w-full py-[6vw] flex flex-col gap-10 text-white">
@@ -77,18 +68,6 @@ const BusinessAccount = () => {
               <div className="w-0 group-hover:w-full bg-primary h-[1px] absolute bottom-0 duration-1000 ease-in-out"></div>
             </div>
           </motion.div>
-        ))}
-      </div>
-
-      <div className="flex flex-wrap gap-8 justify-center items-center mt-5">
-        {brands.map((brand, index) => (
-          <Link
-            key={index}
-            href={"/"}
-            className="opacity-50 hover:opacity-100 duration-300"
-          >
-            <Image src={brand} alt="logo" width={140} height={50} className="w-[140px] h-[50px]" />
-          </Link>
         ))}
       </div>
     </div>
