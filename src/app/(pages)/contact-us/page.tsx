@@ -1,6 +1,6 @@
-import BusinessAccount from '../../components/BusinessAccount/BusinessAccount'
+import BusinessAccount from '@/components/BusinessAccount/BusinessAccount'
 import HeroBanner from './HeroBanner'
-import ReadyBusiness from '../../components/ReadyBusiness/ReadyBusiness'
+import ReadyBusiness from '@/components/ReadyBusiness/ReadyBusiness'
 import Contact from './Contact'
 import Testimonials from '@/components/Testimonials/Testimonials'
 

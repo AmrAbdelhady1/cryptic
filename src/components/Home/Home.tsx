@@ -3,7 +3,7 @@ import HeroBanner from './HeroBanner'
 import HowWorks from './HowWorks'
 import InOneApp from './InOneApp'
 import Start from './Start'
-import Plans from '@/app/pricing/Plans'
+import Plans from '@/app/(pages)/pricing/Plans'
 import LatestNews from './LatestNews'
 import Testimonials from '../Testimonials/Testimonials'
 

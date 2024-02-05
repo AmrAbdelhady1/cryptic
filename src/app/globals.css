@@ -19,6 +19,7 @@
 
 @layer utilities {
   .btn-yellow {
-    @apply font-medium rounded-[5px] w-fit mt-10 text-lg bg-primary border border-primary duration-500 py-[18px] px-[30px] hover:text-white hover:bg-blackPrimary hover:border-blackPrimary;
+    @apply font-medium tracking-[0.5px] leading-5 rounded-[5px] h-[60px] w-fit mt-10 text-lg bg-primary border border-primary 
+    duration-500 flex items-center justify-center px-[30px] hover:text-white hover:bg-blackPrimary hover:border-blackPrimary;
   }
 }
