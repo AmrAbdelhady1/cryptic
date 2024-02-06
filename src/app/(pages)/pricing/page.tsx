@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroBanner from './HeroBanner'
-import Plans from './Plans'
+import Plans from '../../../components/Plans/Plans'
 import BusinessAccount from '@/components/BusinessAccount/BusinessAccount'
 import ReadyBusiness from '@/components/ReadyBusiness/ReadyBusiness'
 

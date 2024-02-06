@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
 
@@ -80,13 +81,13 @@ const CommonQuesttion = () => {
                 <p className="max-w-[460px] text-2xl font-medium font-dmSans">
                   {item.question}
                 </p>
-                <div
-                  className={`duration-300 ease-in-out ${
-                    activeTab === item.id && ""
-                  }`}
+                <motion.span
+                  animate={{ rotate: activeTab === item.id ? 180 : 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="h-fit"
                 >
                   <MdKeyboardArrowDown size={28} />
-                </div>
+                </motion.span>
               </div>
               {activeTab === item.id && (
                 <p className="text-blackPrimary w-full">{item.answer}</p>
@@ -106,13 +107,13 @@ const CommonQuesttion = () => {
                 <p className="max-w-[460px] text-2xl font-medium font-dmSans">
                   {item.question}
                 </p>
-                <div
-                  className={`duration-300 ease-in-out ${
-                    activeTab === item.id && ""
-                  }`}
+                <motion.span
+                  animate={{ rotate: activeTab === item.id ? 180 : 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="h-fit"
                 >
                   <MdKeyboardArrowDown size={28} />
-                </div>
+                </motion.span>
               </div>
               {activeTab === item.id && (
                 <p className="text-blackPrimary">{item.answer}</p>

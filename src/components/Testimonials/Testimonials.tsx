@@ -1,7 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
+
+import Image from "next/image";
 
 const data = [
   {
@@ -35,15 +37,21 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="flex flex-col items-center py-[130px] text-blackPrimary text-center gap-10">
-      <div className="flex flex-col items-center text-center gap-3">
+    <div className="flex flex-col items-center py-[130px] text-blackPrimary text-center gap-10 px-[9vw]">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        key={activeIndex}
+        transition={{duration: 0.7}}
+        className="flex flex-col items-center text-center gap-3"
+      >
         <p className="text-sm font-medium">TESTIMONIALS</p>
-        <p className="max-w-[850px] text-[32px]">
+        <p className="max-w-[850px] text-32">
           &quot;{data[activeIndex].desc}&quot;
         </p>
         <p className="mt-3 text-[20px] font-medium">{data[activeIndex].name}</p>
         <p>{data[activeIndex].job}</p>
-      </div>
+      </motion.div>
 
       <div className="flex items-center justify-center gap-8 mt-2">
         {data.map((item, index) => (

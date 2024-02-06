@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${dmSans.variable} font-inter`}>
+      <body className={`${inter.variable} ${dmSans.variable} font-inter text-blackPrimary`}>
         <main>{children}</main>
       </body>
     </html>

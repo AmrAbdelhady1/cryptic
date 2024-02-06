@@ -48,8 +48,8 @@ const plans = [
 
 const Plans = () => {
   return (
-    <div className="bg-lightPrimary px-[9vw] w-full py-[6vw] flex flex-col gap-10 text-blackPrimary">
-      <p className="text-[48px] font-medium font-dmSans w-full mx-auto max-w-[700px] leading-10 mb-10 text-center">
+    <div className="bg-lightPrimary px-[9vw] w-full py-[130px] flex flex-col gap-10 text-blackPrimary">
+      <p className="text-48 w-full mx-auto max-w-[700px] leading-10 text-center">
         Run the cost-effective business you need
       </p>
 

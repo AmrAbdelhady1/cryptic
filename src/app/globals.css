@@ -18,8 +18,28 @@
 }
 
 @layer utilities {
+  .main-container{
+    @apply py-[130px] w-full px-[9vw];
+  }
+
+  .global-width{
+    @apply w-full max-w-[1200px] mx-auto;
+  }
+  
   .btn-yellow {
-    @apply font-medium tracking-[0.5px] leading-5 rounded-[5px] h-[60px] w-fit mt-10 text-lg bg-primary border border-primary 
-    duration-500 flex items-center justify-center px-[30px] hover:text-white hover:bg-blackPrimary hover:border-blackPrimary;
+    @apply font-medium tracking-[0.5px] leading-5 rounded-[5px] h-10 lg:h-[60px] w-fit text-sm md:text-base lg:text-lg bg-primary border border-primary 
+    duration-500 flex items-center justify-center px-4 lg:px-[30px] hover:text-white hover:bg-blackPrimary hover:border-blackPrimary;
+  }
+
+  .btn-black {
+    @apply !bg-blackPrimary !border-blackPrimary !text-white hover:!bg-primary hover:!border-primary;
+  }
+
+  .text-48{
+    @apply font-medium text-2xl md:text-[32px] lg:text-[48px] font-dmSans lg:leading-[1.2em];
+  }
+
+  .text-32{
+    @apply font-medium text-lg md:text-[20px] lg:text-[32px] font-dmSans leading-[1.5em];
   }
 }
