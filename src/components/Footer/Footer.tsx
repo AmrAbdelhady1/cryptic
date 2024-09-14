@@ -126,8 +126,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-t-darkGray pt-10 w-full text-center">
-          <p>© Lyxis. All Rights Reserved 2024. Licensing</p>
-          <p>Template by wCopilot Powered by Webflow</p>
+          <p>© Amr Abdelhady. All Rights Reserved 2024. Licensing</p>
         </div>
       </div>
     </div>
