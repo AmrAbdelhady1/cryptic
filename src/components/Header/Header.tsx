@@ -12,23 +12,23 @@ import { IoMdClose } from "react-icons/io";
 const links = [
   {
     name: "Who We Are",
-    link: "/",
+    link: "/about-us",
   },
   {
-    name: "Compare",
-    link: "/",
+    name: "Blogs",
+    link: "/blog",
   },
   {
-    name: "Solutions",
-    link: "/",
+    name: "Shop",
+    link: "/shop",
   },
   {
     name: "Pricing",
-    link: "/",
+    link: "/pricing",
   },
   {
     name: "Contact Us",
-    link: "/",
+    link: "/contact-us",
   },
 ];
 

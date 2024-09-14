@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ReadyBusiness = () => {
   return (
-    <div className="mx-[9vw] text-white bg-blackPrimary rounded-[10px] p-[60px] relative">
+    <div className="mx-[9vw] text-white bg-blackPrimary rounded-[10px] p-[60px] relative mb-[130px] global-width">
       <p className="max-w-[500px] text-[42px] font-dmSans font-medium leading-[1.2em] mb-10">
         Ready to take your business to new heights with Lyxis?
       </p>

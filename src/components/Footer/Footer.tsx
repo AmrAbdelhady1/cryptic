@@ -18,11 +18,11 @@ const linksType = [
       },
       {
         name: "Our Team",
-        link: "/our-tema",
+        link: "/our-team",
       },
       {
         name: "Solutions",
-        link: "/solutions",
+        link: "/faq",
       },
     ],
   },

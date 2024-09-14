@@ -2,7 +2,7 @@ import React from "react";
 
 const BottomBanner = () => {
   return (
-    <div className="bg-blackPrimary w-full py-[150px] flex flex-col gap-6 items-center text-center text-white">
+    <div className="bg-blackPrimary w-full py-[150px] flex flex-col gap-6 items-center text-center text-white mb-[130px]">
       <p className="text-[72px] font-medium max-w-[700px] leading-[1em] font-dmSans">Are you ready to unlock the future?</p>
       <p className="max-w-[700px]">
         Contact us today, and lets embark on this exciting digital adventure

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const notfound = () => {
@@ -8,7 +9,9 @@ const notfound = () => {
         Something’s not right.
       </p>
       <p className="my-2">We can’t find the page your are looking for.</p>
-      <button className="btn-yellow">Back to homepage</button>
+      <Link href="/" className="btn-yellow">
+        Back to homepage
+      </Link>
     </div>
   );
 };

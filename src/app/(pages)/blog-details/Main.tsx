@@ -47,7 +47,7 @@ const Main = () => {
         <p className="text-32 my-5">A Deep Dive into Using Lyxis Analytics</p>
 
         <p>
-          Lyxis Analytics is not just a tool; it's a strategic asset for
+          Lyxis Analytics is not just a tool; it&apos;s a strategic asset for
           businesses aiming to navigate the complexities of the modern market.
           Create visual representations of the data that matter most to your
           business, allowing for a quick and comprehensive understanding of key
@@ -87,7 +87,7 @@ const Main = () => {
         <p>
           Track and measure various aspects of your business, from sales and
           customer engagement to operational efficiency, providing a holistic
-          view of your organization's performance. Here's how it becomes the
+          view of your organization&apos;s performance. Here&apos;s how it becomes the
           cornerstone of your data intelligence:
         </p>
 
@@ -107,7 +107,7 @@ const Main = () => {
         <p>
           Track and measure various aspects of your business, from sales and
           customer engagement to operational efficiency, providing a holistic
-          view of your organization's performance. Lyxis Analytics covers a
+          view of your organization&apos;s performance. Lyxis Analytics covers a
           spectrum of performance metrics. Stay on top of evolving trends,
           respond swiftly to market changes, and make informed decisions based
           on the latest information.

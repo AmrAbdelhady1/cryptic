@@ -54,7 +54,7 @@ const Reviews = () => {
             key={item.id}
             className="flex flex-col justify-between gap-5 bg-lightPrimary border border-darkGray rounded-[10px] md:py-5 p-4 md:px-[30px] max-w-[400px] mx-auto leading-[1.5em]"
           >
-            <p className="md:my-[10px] md:text-lg">"{item.desc}"</p>
+            <p className="md:my-[10px] md:text-lg">&quot;{item.desc}&quot;</p>
             <div className="flex items-center gap-2 md:gap-5">
               <Image
                 src={item.image}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const blogs = [
   {
@@ -25,7 +26,7 @@ const OurBlog = () => {
   return (
     <div className="main-container bg-lightPrimary text-blackPrimary !pt-[160px]">
       <div className="global-width flex flex-col lg:flex-row lg:gap-20">
-        <div className="lg:w-[60%]">
+        <Link href="/blog-details" className="lg:w-[60%]">
           <p className="text-72">Our Blog</p>
           <div className="w-full mt-[60px] mb-5 rounded-[10px] overflow-hidden cursor-pointer">
             <Image
@@ -41,7 +42,7 @@ const OurBlog = () => {
             <p>October 3, 2023</p>
           </div>
           <p className="text-hover text-32">A Look into Our Customer Support</p>
-        </div>
+        </Link>
         <div className="lg:w-[40%]">
           <div className="my-10 flex flex-col md:flex-row items-center gap-4">
             <input
@@ -57,7 +58,8 @@ const OurBlog = () => {
             </p>
             <div className="flex flex-col gap-4">
               {blogs.map((blog) => (
-                <div
+                <Link
+                  href="/blog-details"
                   key={blog.id}
                   className="flex gap-4 cursor-pointer"
                 >
@@ -71,10 +73,12 @@ const OurBlog = () => {
                     />
                   </div>
                   <div className="flex flex-col justify-between w-[80%]">
-                    <p className="text-hover lg:text-[20px] font-dmSans font-medium leading-[1.2em]">{blog.name}</p>
+                    <p className="text-hover lg:text-[20px] font-dmSans font-medium leading-[1.2em]">
+                      {blog.name}
+                    </p>
                     <p>{blog.date}</p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

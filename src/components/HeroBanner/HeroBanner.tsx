@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const brands = [
   "/assets/images/home/brand1.svg",
@@ -56,9 +57,9 @@ const HeroBanner = ({ ...props }: Props) => {
             )}
 
             {props.btn && (
-              <button className="btn-yellow mx-auto lg:mx-0">
+              <Link href={props.btn === "Contact Us" ? "/contact-us" : "#"} className="btn-yellow mx-auto lg:mx-0">
                 {props.btn}
-              </button>
+              </Link>
             )}
           </div>
 

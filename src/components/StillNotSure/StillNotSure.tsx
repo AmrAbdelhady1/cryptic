@@ -41,7 +41,7 @@ const StillNotSure = () => {
   };
 
   return (
-    <div className="pt-[130px] flex justify-center gap-[60px] max-w-[1200px] mx-auto text-blackPrimary">
+    <div className="pt-[130px] flex justify-center gap-[60px] max-w-[1200px] mx-auto text-blackPrimary mb-[130px]">
       <div className="w-1/2 overflow-hidden relative rounded-[10px] h-fit">
         <Image
           alt="any"

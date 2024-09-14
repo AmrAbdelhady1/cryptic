@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface Product {
   product: {
@@ -14,7 +15,7 @@ interface Product {
 
 const ProductCard = ({ product }: Product) => {
   return (
-    <div className="w-full flex flex-col gap-5 text-blackPrimary">
+    <Link href="/product" className="w-full flex flex-col gap-5 text-blackPrimary">
       <div className="relative cursor-pointer overflow-hidden w-full rounded-[10px]">
         {product.onSale && (
           <div className="absolute top-4 right-4 bg-primary rounded-[5px] py-2 px-4 duration-300 hover:bg-white z-10">
@@ -43,7 +44,7 @@ const ProductCard = ({ product }: Product) => {
           {product.onSale && <del className="font-normal">$ {product.priceAfterDiscount} USD</del>}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 

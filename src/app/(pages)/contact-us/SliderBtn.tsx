@@ -17,7 +17,7 @@ const SliderBtn = ({ counter, status }: Props) => {
         swiper.slidePrev();
       }
     }
-  }, [counter]);
+  }, [counter, status, swiper]);
 
   return null;
 };

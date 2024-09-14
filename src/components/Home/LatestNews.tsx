@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -31,7 +32,8 @@ const LatestNews = () => {
 
       <div className="flex flex-wrap gap-8 justify-center w-full max-w-[1200px] mx-auto">
         {data.map((item) => (
-          <div
+          <Link
+            href="/blog-details"
             key={item.id}
             className="w-full max-w-[360px] bg-white rounded-[10px]"
           >
@@ -57,7 +59,7 @@ const LatestNews = () => {
 
               <div className="w-0 group-hover:w-full bg-primary h-[2px] absolute bottom-0 duration-1000 ease-in-out"></div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

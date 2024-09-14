@@ -69,7 +69,7 @@ const ReviewSlider = () => {
             className="w-full max-w-[480px] h-[350px] md:h-[450px] lg:h-[500px] rounded-[10px] object-cover"
           />
           <div className="lg:max-w-[570px]">
-            <p className="text-32 mb-10">"{data[activeReview].desc}"</p>
+            <p className="text-32 mb-10">&quot;{data[activeReview].desc}&quot;</p>
             <p className="my-[10px] font-medium font-dmSans text-2xl leading-[1.2em]">
               {data[activeReview].name}
             </p>

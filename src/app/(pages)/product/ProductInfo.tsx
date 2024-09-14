@@ -61,7 +61,7 @@ const ProductInfo = () => {
           <p>
             In a world where our smartphones are an integral part of our daily
             lives, protecting them becomes a priority. Our range of phone cases
-            is more than just a shield for your device; it's a stylish accessory
+            is more than just a shield for your device; it&apos;s a stylish accessory
             that complements your lifestyle while ensuring your phone stays safe
             and functional. Experience unparalleled durability, protecting your
             phone from everyday bumps, drops, and scratches. Enjoy a slim and

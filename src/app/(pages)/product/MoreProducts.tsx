@@ -1,4 +1,5 @@
 import ProductCard from "@/components/ProductCard/ProductCard";
+import Link from "next/link";
 
 const products = [
   {
@@ -29,7 +30,7 @@ const MoreProducts = () => {
       <div className="global-width flex flex-col gap-10">
         <div className="flex items-center justify-between">
           <p className="text-48">Find more products</p>
-          <button className="btn-yellow">View All</button>
+          <Link href="/shop" className="btn-yellow">View All</Link>
         </div>
 
         <div className="flex flex-col md:flex-row gap-[30px] w-full">

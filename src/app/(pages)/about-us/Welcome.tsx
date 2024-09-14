@@ -24,7 +24,7 @@ const Welcome = () => {
           </p>
           <p className="max-w-[500px] text-xs lg:text-base leading-[1.2em] mb-5 lg:mb-10">
             Contact Lyxis today and embark on a transformative journey towards
-            sustainable growth and lasting success. Let's shape a brighter
+            sustainable growth and lasting success. Let&apos;s shape a brighter
             future for your business together.
           </p>
           <div
