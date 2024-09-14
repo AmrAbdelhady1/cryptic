@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import { BsCart3 } from "react-icons/bs";
@@ -31,7 +32,11 @@ const links = [
   },
 ];
 
+const whitePages = ["/testimonials"];
+
 const Header = () => {
+  const pathName = usePathname();
+  const isWhitePage = whitePages.includes(pathName);
   const [openMenu, setOpenMenu] = useState<boolean>(false);
 
   const handleMenuChange = () => {
@@ -39,7 +44,9 @@ const Header = () => {
   };
 
   return (
-    <div className="main-container !py-5 !bg-lightPrimary">
+    <div
+      className="main-container !py-8 absolute top-0"
+    >
       <nav className="flex items-center justify-between global-width">
         <Link href={"/"}>
           <Image

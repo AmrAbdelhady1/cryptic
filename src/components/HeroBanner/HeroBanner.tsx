@@ -19,6 +19,7 @@ interface Props {
   image: string;
   isHome?: boolean;
   btn?: string;
+  isBrands?: boolean;
 }
 
 const HeroBanner = ({ ...props }: Props) => {
@@ -29,10 +30,10 @@ const HeroBanner = ({ ...props }: Props) => {
   };
 
   return (
-    <div className="hero-banner-bg main-container !py-20 !bg-lightPrimary">
-      <div className="flex flex-col gap-20 w-full global-width">
+    <div className="hero-banner-bg main-container !bg-lightPrimary">
+      <div className="flex flex-col w-full global-width">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-5">
-          <div className="flex flex-col text-blackPrimary text-[34px] md:text-[54px] lg:text-[72px] font-medium text-center lg:text-start lg:max-w-[584px]">
+          <div className="flex flex-col text-blackPrimary text-[34px] md:text-[54px] lg:text-[72px] font-medium text-center lg:text-start lg:max-w-[570px]">
             <p className="lg:leading-[72px] mb-5">{props.title}</p>
             <p className="w-full text-lg font-normal mb-[50px]">{props.desc}</p>
 
@@ -61,18 +62,20 @@ const HeroBanner = ({ ...props }: Props) => {
             )}
           </div>
 
-          <div className="w-full flex justify-end">
+          <div className={`${props.isHome ? "w-full" : "lg:w-[55%] max-w-[577px]"} rounded-[10px] overflow-hidden flex justify-end`}>
             <Image
               src={props.image}
               alt="banner"
               width={500}
               height={450}
-              className="object-contain rounded-[10px] w-full max-w-[545px] max-h-[600px]"
+              className={`object-cover w-full h-full max-h-[450px]
+              ${props.isHome ? "max-w-[300px]" : "lg:min-h-[450px]"}
+              `}
             />
           </div>
         </div>
-        {props.isHome && (
-          <div className="flex flex-wrap justify-between items-center gap-4">
+        {props.isBrands && (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 justify-between items-center gap-4 mt-10">
             {brands.map((image, index) => (
               <Image
                 key={index}

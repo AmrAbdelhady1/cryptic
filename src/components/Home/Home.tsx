@@ -16,6 +16,7 @@ const Home = () => {
               future for your business together."
         image="/assets/images/home/hero-banner.webp"
         isHome={true}
+        isBrands={true}
       />
       <HowWorks />
       <InOneApp />

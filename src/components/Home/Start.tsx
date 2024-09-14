@@ -15,7 +15,7 @@ const Start = () => {
           together. Your success is our passion, and we cant wait to be a part
           of it.
         </p>
-        <button className="btn-yellow !text-blackPrimary">
+        <button className="btn-yellow !text-blackPrimary hover:!text-white">
           Get Started
         </button>
       </div>

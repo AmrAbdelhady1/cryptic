@@ -24,7 +24,7 @@ const data = [
 
 const LatestNews = () => {
   return (
-    <div className="flex flex-col gap-10 py-20 w-full px-[9vw] text-blackPrimary">
+    <div className="flex flex-col gap-10 pb-[130px] w-full px-[9vw] text-blackPrimary">
       <div className="flex justify-center w-full">
         <p className="font-medium text-48">Latest news</p>
       </div>
